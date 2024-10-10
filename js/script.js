@@ -4,10 +4,14 @@ const characterImage = document.getElementById("char-image");
 
 let clickCounter = 0;
 
+/**
+ * 
+ * @returns How intriguing, a comment in a place such as this? Hm. Indeed it shall be. God I hate doing comments. No real reason even I just really hate it.
+ */
 function clickFunction() {
     console.log("THE BUTTON HATH BEEN PRESSED!!")
     clickCounter = clickCounter +1;
-
+// it increments. Nothing more to say.
     if (clickCounter > 3){
         clickCounter = 1;
     }
