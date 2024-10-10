@@ -37,3 +37,8 @@
   border-style:solid;
   cursor: pointer;
 }
+
+.char-image{
+  width: 25vw;
+  height: auto;
+}
