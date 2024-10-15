@@ -30,6 +30,6 @@ function onDragStart(event) {
 dropZone.ondrop = onDrop;
 dropZone.ondragover = onDragOver;
 
-for(let accessory of accessories){
+for (let accessory of accessories) {
     accessory.ondragstart = onDragStart;
 }
