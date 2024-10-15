@@ -12,7 +12,7 @@
 }
 
 .height-500px {
-  height: 500;
+  height: 500px;
 }
 
 /* flex styles */
@@ -51,4 +51,11 @@
   border-color: black;
   border-style: solid;
   border-width: 1vw;
+  height: 300px;
+}
+
+#glasses{
+  height: 300px;
+  width: auto;
+  position:absolute;
 }

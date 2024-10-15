@@ -6,6 +6,7 @@
 
     <!-- script link -->
 <script src="js/script.js" defer></script>
+<script src="js/dragdrop.js" defer></script>
 
     <!-- style file -->
     <link rel="stylesheet" href="./style/base.css" />
@@ -14,11 +15,14 @@
 
     <title>HTML JavaScript</title>
   </head>
+  <div id="outfit" class="flex-column">
+    <img src="assets/glasses.png" alt="Fake Glasses" id="glasses" draggable="true">
+  </div>
   <body>
     <!-- main div - full width and full height -->
     <div class="container width-full height-full">
       <!-- inner div - floating in middle of webpage -->
-      <div class="container width-half height-500px bg-marine_blue text-white">
+      <div class="container width-half height-500px bg-marine_blue text-white" id="imageZone">
         <!-- some text -->
 
         <img src="assets/Bulbasaur.png" alt="Initial Pokemon: Bulbasaur" id="char-image">
@@ -31,9 +35,6 @@
 
         <button id="button1">Click me!</button>
       </div>
-    </div>
-    <div id="outfit">
-      <img src="assets/glasses.png" alt="Fake Glasses" id="glasses" draggable="true">
     </div>
   </body>
 </html>
