@@ -3,6 +3,7 @@ const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("char-image");
 const characterArray = ["assets/Charmander.png", "assets/Squirtle.jpeg", "assets/Bulbasaur.png"];
 const altText = ["Initial Pokemon: Charmander", "Initial Pokemon: Squirtle", "Initial Pokemon: Bulbasaur"];
+const paragraphText = ["I am Charmander!", "I am Squirtle!", "I am Bulbasaur!"];
 
 let clickCounter = 0;
 
@@ -22,23 +23,23 @@ function clickFunction() {
 
     if (clickCounter === 1) {
         // characterImage.src = "assets/Charmander.png";
-        characterImage.innerHTML = characterArray[0];
-        myParagraph.innerHTML = "I am Charmander!";
+        characterImage.src = characterArray[0];
+        myParagraph.innerHTML = paragraphText[0];
         characterImage.alt = altText[0];
 
         return;
     }
     if (clickCounter === 2) {
         // characterImage.src = "assets/Squirtle.jpeg";
-        characterImage.innerHTML = characterArray[1];
-        myParagraph.innerHTML = "I am Squirtle!";
+        characterImage.src = characterArray[1];
+        myParagraph.innerHTML = paragraphText[1];
         characterImage.alt = altText[1];
         return;
     }
     if (clickCounter === 3) {
         // characterImage.src = "assets/Bulbasaur.png";
-        characterImage.innerHTML = characterArray[2];
-        myParagraph.innerHTML = "I am Bulbasaur!";
+        characterImage.src = characterArray[2];
+        myParagraph.innerHTML = paragraphText[2];
         characterImage.alt = altText[2];
         return;
     }
