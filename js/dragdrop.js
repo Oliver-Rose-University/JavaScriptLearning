@@ -1,10 +1,10 @@
-const fancyGlasses = document.getElementById("glasses");
+const accessories = document.getElementsByClassName("accessory");
 const dropZone = document.getElementById("imageZone");
 
 function onDrop(event) {
     //bring fancyGlasses to these positions
-    fancyGlasses.style.left = event.clientX - offsetX + "px";
-    fancyGlasses.style.top = event.clientY - offsetY + "px";
+    accessories.style.left = event.clientX - offsetX + "px";
+    accessories.style.top = event.clientY - offsetY + "px";
     console.log("Element has been dropped");
 }
 
@@ -19,7 +19,7 @@ let offsetY = 0;
 
 function onDragStart(event) {
 
-    const style = window.getComputedStyle(fancyGlasses, null);
+    const style = window.getComputedStyle(accessory, null);
 
     offsetX = event.clientX - parseInt(style.left);
     offsetY = event.clientY - parseInt(style.top);
@@ -28,4 +28,7 @@ function onDragStart(event) {
 
 dropZone.ondrop = onDrop;
 dropZone.ondragover = onDragOver;
-fancyGlasses.ondragstart = onDragStart;
+
+for(let accessory of accessories){
+    accessory.ondragstart = onDragStart;
+}

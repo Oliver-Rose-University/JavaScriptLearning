@@ -39,8 +39,8 @@
 }
 
 .char-image{
-  width: 25vw;
-  height: auto;
+  height:25vw;
+  width:auto;
 }
 
 #input{
@@ -58,4 +58,17 @@
   height: 300px;
   width: auto;
   position:absolute;
+}
+
+#jester{
+  height: 300px;
+  width: auto;
+  position:absolute;
+  left: 300px;
+}
+
+.accessory{
+  position: relative;
+  height:300px;
+  width: auto;
 }
