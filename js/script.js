@@ -1,11 +1,21 @@
+// declaring stuff
 const myButton = document.getElementById("button1");
 const myParagraph = document.getElementById("my-paragraph");
 const characterImage = document.getElementById("char-image");
 const characterArray = [ "assets/Bulbasaur.png", "assets/Charmander.png", "assets/Squirtle.jpeg"];
 const altText = ["Initial Pokemon: Bulbasaur", "Initial Pokemon: Charmander", "Initial Pokemon: Squirtle"];
 const paragraphText = ["I am Bulbasaur!", "I am Charmander!", "I am Squirtle!"];
+const customName = document.getElementById("input1");
+const customNameButton = document.getElementById("input-button");
 
 let clickCounter = 0;
+
+
+function onSubmitButton(){
+    myParagraph.innerHTML = customName.value;
+
+}
+
 
 /**
  * 
@@ -20,7 +30,9 @@ function clickFunction() {
     }
     characterImage.src = characterArray[clickCounter];
     myParagraph.innerHTML = paragraphText[clickCounter];
+    // myParagraph.innerHTML = customName.value;
     characterImage.alt = altText[clickCounter];
+    return;
 
 
     // if (clickCounter === 1) {
@@ -45,3 +57,4 @@ function clickFunction() {
     }
 
 myButton.onclick = clickFunction;
+customNameButton.onclick = onSubmitButton;
