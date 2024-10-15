@@ -32,4 +32,6 @@ dropZone.ondragover = onDragOver;
 
 for (let accessory of accessories) {
     accessory.ondragstart = onDragStart;
+    accessory.ondragover = onDragOver;
+    accessory.ondrop = onDrop;
 }
